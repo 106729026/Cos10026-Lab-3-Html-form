@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+
+    <title>CWA Help Desk Appointment Form</title>
+    <meta charset = "utf-8">
+    <meta name="description" content="basic forms lol">
+    <meta name="author" content="Aiman">
+    <meta name="keywords" content="Help desk, Swinburne, Form">
+
+</head>
+
+<body>
+ <form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
+    <img src="logo.png" alt="Swinburne logo" width="150" height="75">
+    <H1>CWA Help Desk Appointment</H1>
+    <p>This Help Desk is located in ATC620. Open 10:30 to 19:00 Monday to Friday</p>
+    <p>Check Blackboard for when CWA tutors will be there.</p>
+
+    <fieldset>
+
+        <legend>Student details</legend>
+        
+        <label for="id.s">Student ID</label>
+        <input type="text" name="Stud_id" id="id.s" pattern="[0-9]]{7,10} required">
+
+        <br><br>
+        <label for="student_name">Given Name</label>
+        <input type="text" name="St_name" id="student_name" pattern="[a-zA-Z]{1,15}">
+        
+        <label for="Fam_name">Family Name</label>
+        <input type="text" name="Fam_name" id="Fam_name" pattern="[a-zA-Z]{1,15}">
+
+    </fieldset>
+
+    <fieldset>
+
+        <legend>Your Unit</legend>
+
+        <p>
+        <label for="Cos10011">COS10011</label>
+        <input type="checkbox" name="Unit" id="Cos10011" checked>
+
+        <label for="Cos60004">COS60004</label>
+        <input type="checkbox" name="Unit" id="Cos60004">
+
+        <label for="Cos60007">COS60007</label>
+        <input type="checkbox" name="Unit" id="Cos60007">
+            <br>
+
+        <label for="tutor_name">Your Tutor</label>
+        <select name="lecturer" id="tutor_name">
+            <option value="select">Please Select</option>
+            <option value="1" >Muhammad Danial</option>
+            <option value="2">Ryan Stothart</option>
+            <option value="3">Akshay Kumar</option>
+            <option value="4">Paveteran</option>
+        </select>
+        </p>
+
+    </fieldset>
+
+    <fieldset>
+
+        <legend>Issue</legend>
+
+        <label for="html">HTML</label>
+        <input type="checkbox" name="issue_lang" id="html" checked>
+
+        <label for="css">CSS</label>
+        <input type="checkbox" name="issue_lang" id="css">
+
+        <label for="javascript">JavaScript</label>
+        <input type="checkbox" name="issue_lang" id="javascript">
+        
+        <label for="php">PHP</label>
+        <input type="checkbox" name="issue_lang" id="php">
+
+        <label for="mysql">MySQL</label>
+        <input type="checkbox" name="issue_lang" id="mysql">
+
+        <br>
+        <div class="form-group">
+             <label for="description">Description of Issue</label>
+             <textarea name="description" id="description" placeholder="Write description of your problem here..." rows="4" cols="50"></textarea>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Preffered data/time</legend>
+        <label for="date">Date</label>
+        <input type="text" name="date_id" id="date" pattern="[0-3]{1}\d{1}\/[0-1]{1}\d{1}\/[1-2]{1}\d{3}" placeholder="dd/mm/yyyy" required>
+        
+        <br><br>
+
+        <label for="cur_time">Time</label>
+        <input type="text" name="time_id" id="cur_time" pattern="[0-1]{1}\d{1}:[0-5]{1}\d{1}" placeholder="00:00" required>
+    </fieldset>
+    
+    <br>
+
+    <input type="submit" id="submit" value="submit">
+    <input type="reset" value="reset_form">
+ </form>
+</body>
+
+
+
+
+</html>
